@@ -357,7 +357,9 @@
                 });
 
                 try {
-                    const apiUrl = '/api/contacto/contact';
+                    const apiUrl = window.location.hostname === 'localhost' 
+                        ? 'http://localhost:3000/api/contacto/contact'
+                        : 'https://tdigestion.com/api/contacto/contact';
                     
                     console.log('Making API request to', apiUrl);
                     const response = await fetch(apiUrl, {
