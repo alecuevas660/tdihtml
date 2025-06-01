@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDI Gestión Inmobiliaria</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#003B73">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container topbar-contact-info">
+                <a href="mailto:contacto@tdigestion.com" class="topbar-link"><i class="bi bi-envelope"></i> contacto@tdigestion.com</a>
+                <span class="topbar-sep">|</span>
+                <a href="tel:+56987260572" class="topbar-link"><i class="bi bi-telephone"></i> +56 9 8726 0572</a>
+                <span class="topbar-sep">|</span>
+                <a href="https://maps.google.com/?q=O%27Higgins+1186,+Of.+1202,+Concepción" target="_blank" rel="noopener noreferrer" class="topbar-link"><i class="bi bi-geo-alt"></i> O'Higgins 1186 Of. 1202, Concepción</a>
+                <span class="topbar-sep">|</span>
+                <a href="https://instagram.com/Tdigestioninmobiliaria" target="_blank" rel="noopener noreferrer" class="topbar-link"><i class="bi bi-instagram"></i></a>
+                <a href="https://facebook.com/Tdigestioninmobiliaria" target="_blank" rel="noopener noreferrer" class="topbar-link"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm animate__animated animate__fadeInDown">
+            <div class="container">
+                <a class="navbar-brand" href="/" aria-label="TDI Gestión Inmobiliaria Home">
+                    <div class="logo">
+                        <div class="logo-main">
+                            <img src="logo.png" alt="Logo TDI Gestión Inmobiliaria" class="logo-img">
+                            <span class="logo-text">TDI</span>
+                        </div>
+                        <span class="logo-subtext">Gestión Inmobiliaria</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/" data-active="Inicio">
+                                <span class="nav-link-content">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="nav-link-content">Servicios</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/servicios-corretaje">Corretaje de Propiedades</a></li>
+                                <li><a class="dropdown-item" href="/servicios-administracion">Administración de Propiedades</a></li>
+                                <li><a class="dropdown-item" href="/servicios-arquitectura">Arquitectura</a></li>
+                                <li><a class="dropdown-item" href="/servicios-legales">Servicios Legales</a></li>
+                                <li><a class="dropdown-item" href="/servicios-obras">Obras Civiles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/nosotros" data-active="Nosotros">
+                                <span class="nav-link-content">Nosotros</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacto" data-active="Contacto">
+                                <span class="nav-link-content">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Component -->
+    <div class="banner">
+        <!-- Slide 1: Servicios -->
+        <div class="banner-content active">
+            <img src="banner3.jpg" alt="Servicios Inmobiliarios">
+            <div class="overlay"></div>
+            <h1 class="banner-title">Soluciones Inmobiliarias Integrales</h1>
+            <p class="banner-description">
+                Corretaje · Administración · Arquitectura · Servicios Legales · Obras Civiles
+            </p>
+        </div>
+        <!-- Slide 2: Arquitectura y Obras -->
+        <div class="banner-content">
+            <img src="banner4.jpg" alt="Arquitectura y Construcción">
+            <div class="overlay"></div>
+            <h1 class="banner-title">Arquitectura y Construcción</h1>
+            <p class="banner-description">
+                Diseño arquitectónico y ejecución de obras civiles con los más altos estándares
+            </p>
+        </div>
+        <!-- Slide 3: Asesoría -->
+        <div class="banner-content">
+            <img src="banner2.jpg" alt="Asesoría Integral">
+            <div class="overlay"></div>
+            <h1 class="banner-title">Asesoría Integral</h1>
+            <p class="banner-description">
+                Corretaje inmobiliario y servicios legales especializados
+            </p>
+        </div>
+        <button class="banner-arrow left" aria-label="Anterior slide"><i class="bi bi-chevron-left"></i></button>
+        <button class="banner-arrow right" aria-label="Siguiente slide"><i class="bi bi-chevron-right"></i></button>
+        <div class="banner-nav"></div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold custom-title-color mb-2 fade-in-up">¿Por qué elegirnos?</h2>
+            <div class="title-underline custom-underline-color fade-in-up mb-5"></div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 fade-in-up" data-delay="0">
+                        <div class="icon-container">
+                            <div class="icon-wrapper">
+                                <i class="bi bi-building-check"></i>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <h3 class="h4 text-center mb-3">Experiencia Comprobada</h3>
+                        </div>
+                        <div class="desc-container">
+                            <p class="text-center mb-0">Más de 10 años en el mercado inmobiliario, con un historial de proyectos exitosos y clientes satisfechos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 fade-in-up" data-delay="200">
+                        <div class="icon-container">
+                            <div class="icon-wrapper">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <h3 class="h4 text-center mb-3">Garantía de Calidad</h3>
+                        </div>
+                        <div class="desc-container">
+                            <p class="text-center mb-0">Trabajamos con los más altos estándares de calidad y cumplimos con todas las normativas vigentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 fade-in-up" data-delay="400">
+                        <div class="icon-container">
+                            <div class="icon-wrapper">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <h3 class="h4 text-center mb-3">Equipo Multidisciplinario</h3>
+                        </div>
+                        <div class="desc-container">
+                            <p class="text-center mb-0">Contamos con profesionales especializados en arquitectura, derecho, ingeniería y corretaje inmobiliario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card h-100 fade-in-up" data-delay="600">
+                        <div class="icon-container">
+                            <div class="icon-wrapper">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="title-container">
+                            <h3 class="h4 text-center mb-3">Inversión Segura</h3>
+                        </div>
+                        <div class="desc-container">
+                            <p class="text-center mb-0">Asesoramiento experto para maximizar el valor de tu inversión inmobiliaria.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold custom-title-color mb-2 fade-in-up">Servicios por Categoría</h2>
+            <div class="title-underline custom-underline-color fade-in-up mb-5"></div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6">
+                    <div class="service-card position-relative overflow-hidden rounded fade-in-up" data-delay="0">
+                        <img 
+                            src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104368/corretaje_xz3tsy.png"
+                            alt="Corretaje y Administración"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                            loading="lazy"
+                        />
+                        <div class="service-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="service-title-container">
+                                <h3 class="fw-bold text-white mb-1 service-title-large">Corretaje y Administración</h3>
+                            </div>
+                            <div class="service-desc-container">
+                                <p class="service-description mt-2">Gestión integral de compra, venta y arriendo de propiedades, además de administración profesional de inmuebles.</p>
+                            </div>
+                            <a class="service-btn mt-3" href="/servicios-corretaje">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="service-card position-relative overflow-hidden rounded fade-in-up" data-delay="200">
+                        <img 
+                            src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104367/arquitectura_h5e6ym.webp"
+                            alt="Arquitectura"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                            loading="lazy"
+                        />
+                        <div class="service-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="service-title-container">
+                                <h3 class="fw-bold text-white mb-1 service-title-large">Arquitectura</h3>
+                            </div>
+                            <div class="service-desc-container">
+                                <p class="service-description mt-2">Diseño arquitectónico, remodelaciones y proyectos personalizados para tu propiedad.</p>
+                            </div>
+                            <a class="service-btn mt-3" href="/servicios-arquitectura">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="service-card position-relative overflow-hidden rounded fade-in-up" data-delay="400">
+                        <img 
+                            src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104366/servicios-legales_boogab.jpg"
+                            alt="Servicios Legales"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                            loading="lazy"
+                        />
+                        <div class="service-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="service-title-container">
+                                <h3 class="fw-bold text-white mb-1 service-title-large">Servicios Legales</h3>
+                            </div>
+                            <div class="service-desc-container">
+                                <p class="service-description mt-2">Asesoría legal especializada en bienes raíces, contratos y regularización de propiedades.</p>
+                            </div>
+                            <a class="service-btn mt-3" href="/servicios-legales">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="service-card position-relative overflow-hidden rounded fade-in-up" data-delay="600">
+                        <img 
+                            src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104365/obrasciviles_tovxvp.jpg"
+                            alt="Obras Civiles"
+                            class="img-fluid w-100 h-100 object-fit-cover"
+                            loading="lazy"
+                        />
+                        <div class="service-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="service-title-container">
+                                <h3 class="fw-bold text-white mb-1 service-title-large">Obras Civiles</h3>
+                            </div>
+                            <div class="service-desc-container">
+                                <p class="service-description mt-2">Construcción, ampliaciones y mejoras de infraestructura con altos estándares de calidad.</p>
+                            </div>
+                            <a class="service-btn mt-3" href="/servicios-obras">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold custom-title-color mb-2 fade-in-up">Nuestro Proceso</h2>
+            <div class="title-underline custom-underline-color fade-in-up mb-5"></div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-card position-relative overflow-hidden rounded fade-in-up" data-delay="0">
+                        <div class="process-bg" style="background-image: url('diagnostico.jpg');"></div>
+                        <div class="process-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="process-icon-container mb-3">
+                                <div class="process-icon">
+                                    <i class="bi bi-chat-dots"></i>
+                                </div>
+                            </div>
+                            <div class="process-title-container">
+                                <h3 class="fw-bold text-white mb-2 process-title">1. Diagnóstico</h3>
+                            </div>
+                            <div class="process-desc-container">
+                                <p class="process-description">Entendemos tus necesidades y objetivos a través de una conversación profunda y personalizada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-card position-relative overflow-hidden rounded fade-in-up" data-delay="200">
+                        <div class="process-bg" style="background-image: url('estrategia.jpg');"></div>
+                        <div class="process-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="process-icon-container mb-3">
+                                <div class="process-icon">
+                                    <i class="bi bi-lightbulb"></i>
+                                </div>
+                            </div>
+                            <div class="process-title-container">
+                                <h3 class="fw-bold text-white mb-2 process-title">2. Estrategia</h3>
+                            </div>
+                            <div class="process-desc-container">
+                                <p class="process-description">Desarrollamos un plan de acción adaptado a tus necesidades específicas y objetivos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-card position-relative overflow-hidden rounded fade-in-up" data-delay="400">
+                        <div class="process-bg" style="background-image: url('ejecucion.jpg');"></div>
+                        <div class="process-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="process-icon-container mb-3">
+                                <div class="process-icon">
+                                    <i class="bi bi-gear"></i>
+                                </div>
+                            </div>
+                            <div class="process-title-container">
+                                <h3 class="fw-bold text-white mb-2 process-title">3. Ejecución</h3>
+                            </div>
+                            <div class="process-desc-container">
+                                <p class="process-description">Implementamos la solución con un equipo especializado y tecnología de vanguardia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-card position-relative overflow-hidden rounded fade-in-up" data-delay="600">
+                        <div class="process-bg" style="background-image: url('seguimiento.jpg');"></div>
+                        <div class="process-overlay d-flex flex-column justify-content-center align-items-center text-center p-3">
+                            <div class="process-icon-container mb-3">
+                                <div class="process-icon">
+                                    <i class="bi bi-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="process-title-container">
+                                <h3 class="fw-bold text-white mb-2 process-title">4. Seguimiento</h3>
+                            </div>
+                            <div class="process-desc-container">
+                                <p class="process-description">Acompañamiento continuo y ajustes necesarios para garantizar el éxito del proyecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center fade-in-up">
+                    <div class="process-cta">
+                        <h3 class="h4 mb-4">¿Listo para comenzar tu proyecto?</h3>
+                        <p class="mb-4">Agenda una consulta gratuita y descubre cómo podemos ayudarte a alcanzar tus objetivos.</p>
+                        <a href="/contacto" class="process-btn">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold custom-title-color mb-2 fade-in-up">Tu Propiedad, Tu Historia</h2>
+            <div class="title-underline custom-underline-color fade-in-up mb-5"></div>
+            <p class="text-center text-muted mb-5 fade-in-up">Inspírate con imágenes que celebran la arquitectura, el diseño, la construcción y la gestión inmobiliaria. Descubre cómo nuestros servicios pueden transformar espacios, crear valor y aportar bienestar a las personas y comunidades.</p>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-card fade-in-up" data-delay="0">
+                        <div class="gallery-img-wrapper">
+                            <img src="corretaje.jpg" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" />
+                        </div>
+                        <div class="gallery-content p-3">
+                            <h3 class="gallery-title mb-2">Corretaje y Administración</h3>
+                            <p class="gallery-story mb-0">La tranquilidad de dejar tu propiedad en manos expertas. Gestionamos cada detalle para que solo te preocupes de disfrutar tu nuevo hogar o inversión.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-card fade-in-up" data-delay="150">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104367/arquitectura_h5e6ym.webp" alt="Arquitectura que Transforma" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" />
+                        </div>
+                        <div class="gallery-content p-3">
+                            <h3 class="gallery-title mb-2">Arquitectura que Transforma</h3>
+                            <p class="gallery-story mb-0">Un diseño pensado para ti puede cambiarlo todo. Remodelamos y creamos espacios que reflejan tu estilo de vida y tus sueños.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-card fade-in-up" data-delay="300">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104366/servicios-legales_boogab.jpg" alt="Seguridad Legal" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" />
+                        </div>
+                        <div class="gallery-content p-3">
+                            <h3 class="gallery-title mb-2">Seguridad Legal</h3>
+                            <p class="gallery-story mb-0">Cada firma, cada contrato, cada paso: te acompañamos con respaldo legal para que tu experiencia inmobiliaria sea segura y transparente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-card fade-in-up" data-delay="450">
+                        <div class="gallery-img-wrapper">
+                            <img src="https://res.cloudinary.com/dscyapo0j/image/upload/v1747104365/obrasciviles_tovxvp.jpg" alt="Obras Civiles de Confianza" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" />
+                        </div>
+                        <div class="gallery-content p-3">
+                            <h3 class="gallery-title mb-2">Obras Civiles de Confianza</h3>
+                            <p class="gallery-story mb-0">Construimos y mejoramos espacios con altos estándares de calidad, para que tu inversión sea duradera y tu familia esté protegida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-card fade-in-up" data-delay="600">
+                        <div class="gallery-img-wrapper">
+                            <img src="compra-propiedades.jpg" alt="Compra de Propiedades" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" />
+                        </div>
+                        <div class="gallery-content p-3">
+                            <h3 class="gallery-title mb-2">Compra de Propiedades</h3>
+                            <p class="gallery-story mb-0">Encuentra la propiedad ideal para ti. Te acompañamos en todo el proceso de compra, con asesoría experta y personalizada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery-card fade-in-up" data-delay="750">
+                        <div class="gallery-img-wrapper">
+                            <img src="venta-propiedades.jpg" alt="Venta de Propiedades" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" />
+                        </div>
+                        <div class="gallery-content p-3">
+                            <h3 class="gallery-title mb-2">Venta de Propiedades</h3>
+                            <p class="gallery-story mb-0">Vende tu propiedad de forma segura y eficiente. Nos encargamos de la gestión, promoción y cierre exitoso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5 position-relative">
+        <!-- SVG decorativo superior -->
+        <div class="contact-wave-top">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,80 C360,160 1080,0 1440,80 L1440,0 L0,0 Z" fill="#003B73" fill-opacity="0.12"/>
+                <path d="M0,100 C400,0 1040,200 1440,60 L1440,0 L0,0 Z" fill="#ff5630" fill-opacity="0.07"/>
+            </svg>
+        </div>
+        <!-- Contenedor de notificaciones personalizado -->
+        <div id="custom-notification" class="custom-notification d-none"></div>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="display-6 fw-bold custom-title-color mb-2 fade-in-up">¡Contáctanos!</h2>
+                        <div class="title-underline custom-underline-color fade-in-up"></div>
+                        <p class="text-muted mt-4 fade-in-up">
+                            Desarrollamos planes de asesorías a la medida de tus necesidades y de tu empresa. ¡Estamos emocionados de conectarnos contigo!
+                        </p>
+                    </div>
+
+                    <div class="contact-form-fullwidth fade-in-up">
+                        <form id="homeContactForm" class="needs-validation pro-form pro-form-fullwidth" novalidate>
+                            <div class="pro-form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control form-control-lg" 
+                                    id="nombre" 
+                                    name="nombre"
+                                    placeholder="Ej: Juan Pérez"
+                                    required
+                                />
+                            </div>
+                            <div class="pro-form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input 
+                                    type="email" 
+                                    class="form-control form-control-lg" 
+                                    id="email" 
+                                    name="email"
+                                    placeholder="Ej: correo@ejemplo.com"
+                                    required
+                                />
+                            </div>
+                            <div class="pro-form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input 
+                                    type="tel" 
+                                    class="form-control form-control-lg" 
+                                    id="telefono" 
+                                    name="telefono"
+                                    placeholder="Ej: +56 9 1234 5678"
+                                    required
+                                />
+                            </div>
+                            <div class="pro-form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea 
+                                    class="form-control form-control-lg" 
+                                    id="mensaje" 
+                                    rows="5" 
+                                    placeholder="Cuéntanos sobre tu proyecto o requerimiento"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="pro-btn-submit">
+                                    <span id="button-text">Enviar mensaje</span>
+                                    <span id="button-loader" class="d-none">
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        Enviando...
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4 align-items-stretch">
+                    <!-- Logo y Descripción -->
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 footer-col">
+                        <div class="footer-brand-navbar-style">
+                            <div class="footer-logo-main">
+                                <img src="logo.png" alt="Logo TDI Gestión Inmobiliaria" class="footer-logo-img-navbar" />
+                                <span class="footer-logo-text-navbar">TDI</span>
+                            </div>
+                            <span class="footer-logo-subtext-navbar">Gestión Inmobiliaria</span>
+                            <p class="brand-description">
+                                Tu socio confiable en el mercado inmobiliario, ofreciendo soluciones integrales para compra, venta, arriendo y administración de propiedades.
+                            </p>
+                            <div class="social-links">
+                                <a href="https://facebook.com/Tdigestioninmobiliaria" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                                <a href="https://instagram.com/Tdigestioninmobiliaria" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Enlaces Rápidos -->
+                    <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 footer-col">
+                        <div class="footer-links">
+                            <h3 class="footer-title">Enlaces</h3>
+                            <ul>
+                                <li><a href="/">Inicio</a></li>
+                                <li><a href="/nosotros">Nosotros</a></li>
+                                <li><a href="/contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Servicios -->
+                    <div class="col-lg-3 col-md-4 mb-4 mb-lg-0 footer-col">
+                        <div class="footer-links">
+                            <h3 class="footer-title">Servicios</h3>
+                            <ul>
+                                <li><a href="/servicios-corretaje">Corretaje de Propiedades</a></li>
+                                <li><a href="/servicios-administracion">Administración de Propiedades</a></li>
+                                <li><a href="/servicios-arquitectura">Arquitectura</a></li>
+                                <li><a href="/servicios-legales">Servicios Legales</a></li>
+                                <li><a href="/servicios-obras">Obras Civiles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contacto -->
+                    <div class="col-lg-3 col-md-4 footer-col">
+                        <div class="footer-contact">
+                            <h3 class="footer-title">Contacto</h3>
+                            <ul>
+                                <li><i class="bi bi-envelope"></i><a href="mailto:contacto@tdigestion.com">contacto@tdigestion.com</a></li>
+                                <li><i class="bi bi-telephone"></i><a href="tel:+56987260572">+56 9 8726 0572</a></li>
+                                <li><i class="bi bi-geo-alt"></i><span>O'Higgins 1186 Of. 1202, Edif. Studio Sur - Concepción</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-separator"></div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; <script>document.write(new Date().getFullYear())</script> TDI Inmobiliaria. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize contact form
+            initializeContactForm('homeContactForm');
+            
+            // Initialize fade-in animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
