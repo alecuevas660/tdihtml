@@ -17,7 +17,7 @@ const port = process.env.PORT || 3000;
 // Configuración CORS según el entorno
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://tdigestion.com', 'https://www.tdigestion.com']
+    ? ['https://tdigestion.com', 'https://www.tdigestion.com', 'https://tdihtml.onrender.com/api/contacto/contact']
     : '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
